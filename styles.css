@@ -1,0 +1,82 @@
+:root {
+   --title: #fffcf9;
+   --subtitle: #b3b3b3;
+   --bg-button: #e9e6e3;
+   --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+}
+
+html {
+    font-size: 62.5%;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--background);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+   width: min(70vw, 600px);
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main img {
+   width: 8.7rem;
+   height: 6.2rem
+}
+
+main h1 {
+   font-size: 4rem;
+
+   color: var(--title);
+}
+
+#renderTitleMovie {
+   color: white;
+   font-size: 2rem;
+}
+
+#renderDescription {
+   color: var(--subtitle);
+   font-size: 2rem;
+}
+
+.button button{
+   width: 18rem;
+   height: 4.7rem;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   gap: 2rem;
+   font-weight: bold;
+   border-radius: 5px;
+   border-style: none;
+}
+
+.button button img {
+   width: 3.5rem; 
+   height: 2.5rem;
+}
+
+main p {
+   color: var(--title);
+   font-weight: 400;
+   font-size: 1.4rem;
+
+   line-height: 2.1rem;
+   text-align: center;
+}
