@@ -1,12 +1,6 @@
-// import {
-//   API_KEY, BASE_URL,
-//   IMG_URL,
-//   language,
-// } from './api.js'
-
 const API_KEY = 'api_key=0c0cd73908db86277cdea9e6ec945b6d';
 const BASE_URL = 'https://api.themoviedb.org/3';
-const IMG_URL = 'https://image.tmdb.org/t/p/w500';
+const IMG_URL = 'https://image.tmdb.org/t/p/w500/';
 const language = 'language=pt-BR';
 const API_URL = "/discover/movie?sort_by=popularity.desc&";
 
@@ -19,8 +13,11 @@ function getMovie() {
     const checkInfo = response.data.results
     const titleMovie = response.data.results[number].title;
     const DescriptionMovie = response.data.results[number].overview
-    renderTitleMovie.textContent = JSON.stringify(titleMovie);
-    renderDescription.textContent = JSON.stringify(DescriptionMovie)
+    const movieImage = response.data.results[number].poster_path
+    const imageUrl = IMG_URL + movieImage
+    movieTitle.textContent = titleMovie;
+    movieDescription.textContent = DescriptionMovie;
+    document.getElementById("movieImage").src = imageUrl;
   })
   .catch(error => {console.log(error);
   })
