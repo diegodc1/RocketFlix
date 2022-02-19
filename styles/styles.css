@@ -7,8 +7,11 @@
 
 html {
     font-size: 62.5%;
-
     font-family: 'Poppins', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -21,7 +24,7 @@ body {
 }
 
 main {
-   width: min(70vw, 600px);
+   width: min(86vw, 600px);
     height: 100vh;
 
     display: flex;
@@ -30,10 +33,12 @@ main {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+
+    margin-top: 3rem;
 }
 
 
-/**** Head ****/
+/*============== Head ============*/
 main img {
    width: 8.7rem;
    height: 6.2rem
@@ -46,14 +51,14 @@ main h1 {
 }
 
 
-/****** Movie Info ******/
+/*============== Movie Info ============*/
 .movie-info {
    display: flex;
    justify-content: center;
    align-items: top;
    gap: 2rem;
-   transition: all 0.4s ease-in-out;
 
+   margin-bottom: 3rem;
 }
 
 .movie-details {
@@ -61,10 +66,20 @@ main h1 {
    flex-direction: column;
 }
 
-
 #movieTitle {
    color: var(--title);
    font-size: 2.4rem;
+   margin: 0;
+}
+
+.info-details {
+   color: white;
+   display: flex;
+   gap: 3rem;
+}
+
+.info-details p {
+   font-size: 1.1rem;
 }
 
 #movieDescription {
@@ -72,19 +87,60 @@ main h1 {
    font-size: 1.6rem;
    font-weight: 300;
    text-align: left;
-   transition: all 0.4s ease-in-out;
-
 }
 
+/* Average */
+.average {
+   display: flex;
+   align-items: center;
+   gap: 0.4rem;
+}
+
+.average p {
+   margin: 0
+}
+
+#averageNote {
+   display: flex;
+   align-items: center;
+
+   font-size: 1rem;
+   font-weight: bold;
+   color: black;
+   background: var(--bg-button);
+
+   border-radius: 2px;
+   padding: 0 0.2rem;
+   max-height: 1.5rem;   
+}
+
+/* Date Release */
+.date-release {
+   display: flex;
+   gap: 0.4rem;
+   margin: 0
+}
+
+.date-release p{
+   margin: 0
+}
+
+
+
+/* Image */
 #movieImage {
-   width: 21rem;
-   height: 21rem;
+   width: 26rem;
+   height: 26rem;
    border-radius: 10px;
    border: 3px solid white;
 }
 
+.invisible {
+   display: none;
+}
 
-/****** Button ******/
+
+/*============= Button ===========*/
 .button button{
    width: 18rem;
    height: 4.7rem;
@@ -111,7 +167,7 @@ main h1 {
 }
 
 
-/***** Help *****/
+/*============ Help =============*/
 main p {
    color: var(--title);
    font-weight: 400;

@@ -1,0 +1,57 @@
+@media (max-width: 500px) {
+   html {
+      font-size: 53%;
+   }
+
+   body {
+      height: 100%
+
+   }
+
+   main {
+      /* height: 100vh; */
+      margin-top: 3rem;
+      height: 100%
+   }
+   
+   main img {
+      width: 8rem;
+      height: 8rem;
+   }
+
+   main h1 {
+      font-size: 4rem;
+      text-align: center;
+   }
+   
+   .movie-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .info-details {
+      justify-content: center;
+   }
+
+   #movie-description {
+      text-align: center;
+   }
+
+   .button button {
+      width: 20rem;
+   }
+
+   #movieImage {
+      width: 20rem;
+      height: 26rem;
+      border: 3px solid white;
+   }
+}
+
+@media (min-width: 650px) {
+   .movie-info {
+      gap: 4rem;
+   }
+}
