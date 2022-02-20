@@ -2,7 +2,9 @@
    --title: #fffcf9;
    --subtitle: #b3b3b3;
    --bg-button: #e9e6e3;
-   --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+   /* --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%); */
+   --border-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+   --background: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
 }
 
 html {
@@ -24,8 +26,8 @@ body {
 }
 
 main {
-   width: min(86vw, 600px);
-    height: 100vh;
+   width: min(86vw, 800px);
+    min-height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -34,22 +36,37 @@ main {
     justify-content: center;
     gap: 1rem;
 
-    margin-top: 3rem;
+    margin-top: 0rem;
 }
 
 
 /*============== Head ============*/
-main img {
-   width: 8.7rem;
-   height: 6.2rem
+.header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
 }
 
-main h1 {
+.header img {
+   width: 8.7rem;
+   height: 6.2rem;
+   margin-bottom: 2rem;
+}
+
+.header h1 {
    font-size: 4rem;
 
    color: var(--title);
+   margin: 0
 }
 
+.header h2 {
+   color: var(--title);
+   font-weight: 500;
+   font-size: 1.4rem;
+   margin: 0
+}
 
 /*============== Movie Info ============*/
 .movie-info {
@@ -79,7 +96,7 @@ main h1 {
 }
 
 .info-details p {
-   font-size: 1.1rem;
+   font-size: 1.3rem;
 }
 
 #movieDescription {
@@ -125,14 +142,12 @@ main h1 {
    margin: 0
 }
 
-
-
 /* Image */
+
 #movieImage {
    width: 26rem;
    height: 26rem;
    border-radius: 10px;
-   border: 3px solid white;
 }
 
 .invisible {
@@ -141,9 +156,19 @@ main h1 {
 
 
 /*============= Button ===========*/
+.button {
+   display: flex;
+   gap: 2rem;
+   height: 30%
+}
+
+.button a {
+   text-decoration: none;
+   list-style: none
+}
 .button button{
-   width: 18rem;
-   height: 4.7rem;
+   width: 24rem;
+   height: 6.7rem;
 
    display: flex;
    align-items: center;
@@ -151,19 +176,31 @@ main h1 {
 
    gap: 2rem;
    font-weight: bold;
-   border-radius: 5px;
+   font-size: 1.7rem;
+   border-radius: 8px;
    border-style: none;
-   transition: all 0.1s ease-in-out;
+   transition: all 0.2s linear;
 }
 
 .button button img {
-   width: 3.5rem; 
+   width: 4.5rem; 
    height: 2.5rem;
 }
 
 .button button:hover {
    cursor: pointer;
    filter: brightness(110%);
+}
+
+.button .movie:hover{
+   color: #832449 ;
+   border-bottom: 5px solid #832449 ;
+}
+
+.serie:hover {
+   color: #2D3589;
+   border-bottom: 5px solid #2D3589;
+
 }
 
 
@@ -175,4 +212,16 @@ main p {
 
    line-height: 2.1rem;
    text-align: center;
+}
+
+/*======== Footer ==========*/
+footer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+footer p {
+   color: white;
+   font-weight: 100;
 }
