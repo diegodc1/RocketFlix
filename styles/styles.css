@@ -49,8 +49,8 @@ main {
 }
 
 .header img {
-   width: 8.7rem;
-   height: 6.2rem;
+   width: 14.7rem;
+   height: 14.2rem;
    margin-bottom: 2rem;
 }
 
@@ -67,6 +67,7 @@ main {
    font-size: 1.4rem;
    margin: 0
 }
+
 
 /*============== Movie Info ============*/
 .movie-info {
@@ -183,8 +184,8 @@ main {
 }
 
 .button button img {
-   width: 4.5rem; 
-   height: 2.5rem;
+   width: 4rem; 
+   height: 4rem;
 }
 
 .button button:hover {
@@ -219,9 +220,12 @@ footer {
    display: flex;
    align-items: center;
    justify-content: center;
+   margin: 0
 }
 
 footer p {
    color: white;
    font-weight: 100;
+   margin: 0
+
 }
